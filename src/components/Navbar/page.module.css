@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerWrapper {
+    padding: 20px 0;
+    background: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.header__nav {
+    display: flex;
+    margin:  0 -20px;
+    align-items: center;
+}
+
+.header__nav > div {
+}
+.header__navLink {
+    color: #575757;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.header__navLink:hover {
+    text-decoration: underline;
+}
+
+
+.header__btnLogout {
+    padding: 10px 20px;
+    background: #7679ff;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header__btnLogout:hover {
+    opacity: .8;
+}
