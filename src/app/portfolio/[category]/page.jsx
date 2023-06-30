@@ -3,7 +3,9 @@ import style from './page.module.css';
 
 const PortfolioId = () => {
     return (
-        <div>PortfolioId</div>
+        <div>
+
+        </div>
     )
 }
 
