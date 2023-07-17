@@ -1,9 +1,32 @@
 import React from "react";
 import style from './page.module.css';
+import Link from "next/link";
 
-const Blog = () => {
+async function getData() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+    if (!res.ok) {
+        throw new Error('Failed to fetch data')
+    }
+
+    return res.json()
+}
+
+const Blog = async () => {
+
+    const data = await getData();
+
     return (
-        <div>Blog</div>
+        <div>
+            {
+            data.map(item => {
+                return <Link href={`blog/${item.id}`}>
+                    <div>{item.title}</div>
+                </Link>
+            })
+            }
+
+        </div>
+
     )
 }
 
