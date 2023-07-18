@@ -13,8 +13,14 @@ const getData = (categoryId) => {
     return notFound();
 }
 
-const PortfolioId = ({params}) => {
+export async function generateMetadata({params}){
+    return {
+        title: `Категория партфолио: ${params.category}`,
+    }
+}
 
+
+const PortfolioId = ({params}) => {
     const data = getData(params.category);
 
     return (

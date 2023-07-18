@@ -2,7 +2,15 @@ import React from "react";
 import style from './page.module.css';
 import Link from "next/link";
 
+export const metadata = {
+    title: 'Портфолио',
+    description: 'Описание страницы портфолио',
+}
+
 const Portfolio = () => {
+
+    console.log('Портфолио')
+
     return (
         <div>
             <h1 className={style.selectTitle}>Choose a gallery</h1>

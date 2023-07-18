@@ -10,6 +10,13 @@ async function getData(id) {
     return res.json()
 }
 
+export async function generateMetadata({ params}){
+    const data = await getData(params.id);
+    return {
+        title: data.title,
+    }
+}
+
 const BlogId = async ({params}) => {
 
     const data = await getData(params.id);
