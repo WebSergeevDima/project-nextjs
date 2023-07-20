@@ -19,7 +19,6 @@ export async function generateMetadata({params}){
     }
 }
 
-
 const PortfolioId = ({params}) => {
     const data = getData(params.category);
 
