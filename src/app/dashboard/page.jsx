@@ -39,7 +39,7 @@ const Dashboard = () => {
 
 
     return (
-        <div>Dashboard</div>
+        <div>Панель управления</div>
     )
 }
 
